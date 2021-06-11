@@ -8,4 +8,8 @@ echo "Updating up all packages"
 apt-get -y clean
 apt-get -y update
 apt-get -y upgrade
+apt-get -y  dist-upgrade
 apt-get -y --purge autoremove
+apt-get -y clean
+apt-get -y autoclean
+apt-get -y autoremove
