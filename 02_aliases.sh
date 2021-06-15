@@ -5,6 +5,7 @@ exec 2> /dev/null
 cat << EOF
 alias dcr='docker-compose run --rm'
 alias dc='docker-compose'
+alias dcres='dc ps && dc down && dc ps && dc up -d && dc ps && dc logs -f'
 alias lsa='ls -alh'
 alias ll='lsa'
 alias cb='xclip -sel clip'
